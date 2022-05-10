@@ -11,6 +11,6 @@
     cursor: pointer;
     transition: $transition;
     &:hover {
-        background-color: lighten($color: $main-color, $amount: 5%);
+        background-color: #dc5238;
     }
 }

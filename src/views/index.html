@@ -27,6 +27,27 @@
     </head>
     <body>
         @@include("../blocks/modules/header/header.html")
+
+        @@include("../blocks/modules/advantages/advantages.html")
+
+        @@include("../blocks/modules/ourWork/ourWork.html")
+
+        @@include("../blocks/modules/agent/agent.html", {
+            "title": "Агент в Китае",
+            "text": "Русскоговорящие представители компании без труда найдут именно тот товар, который будет отвечать Вашим запросам как по качеству, так и по цене.",
+            "bgPath": "../img/agent/bg-agent.jpg",
+            "imgPath": "../img/agent/person.png"
+        })
+
+        @@include("../blocks/modules/price/price.html")
+        
+        @@include("../blocks/modules/agent/agent.html", {
+            "title": "Менеджеры компании",
+            "text": "Подберут для Вас оптимальную схему грузоперевозки. Проведут контроль закупок, организуют прямые поставки от завода-изготовителя.",
+            "bgPath": "../img/manager/bg-manager.jpg",
+            "imgPath": "../img/manager/managers.png"
+        })
+
         @@include("../blocks/modules/footer/footer.html")
         <script src="js/vendor.js"></script>
         <script src="js/main.js"></script>

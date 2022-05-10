@@ -10,3 +10,10 @@ h1, h2, h3, h4, h5, h6, ul {
     max-width: 1140px;
     margin: 0 auto;
 }
+
+.divider {
+    height: 1px;
+    width: 148px;
+    background-color: $main-color;
+    margin: 20px auto 0 auto;
+}
