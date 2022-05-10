@@ -1,8 +1,9 @@
 .promo {
-    height: 680px;
+    min-height: 680px;
     background: url("../img/promo/bg-main.jpg") center center/cover;
     padding-top: 23px;
     color: #fff;
+    position: relative;
     &__logo {
         width: 96px;
         height: 100px;
@@ -169,5 +170,106 @@
         height: 57px;
         font-size: 15px;
         font-weight: bold;
+    }
+}
+//Menu and burger
+
+.side-menu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    z-index: 20;
+    visibility: hidden;
+    opacity: 0;
+    transition: $transition;
+    &.active {
+        left: 0;
+        visibility: visible;
+        opacity: 1;
+    }
+    &__block {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.85);
+        z-index: 50;
+    }
+    &__close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 52px;
+        color: #fff;
+        cursor: pointer;
+    }
+    &__content {
+        padding-top: 20vh;
+    }
+    &__list {
+        list-style-type: none;
+        padding-left: 75px;
+    }
+    &__item {
+        margin-bottom: 20px;
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            left: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 15px;
+            height: 2px;
+            background-color: #fff;
+        }
+    }
+    &__link {
+        color: #fff;
+        font-size: 24px;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: #fff;
+        opacity: .2;
+        z-index: 10;
+    }
+}
+
+.burger {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    display: none;
+    span {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: $main-color;
+        transition: transform .5s ease;
+    }
+    &.active {
+        span:nth-child(1) {
+            transform: rotate(45deg);
+        }
+        span:nth-child(2) {
+            visibility: hidden;
+        }
+        span:nth-child(3) {
+            transform: translateY(-14px) rotate(-45deg);
+        }
     }
 }

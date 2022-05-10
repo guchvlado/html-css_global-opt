@@ -1,0 +1,98 @@
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .promo {
+        &__button {
+            display: none;
+        }
+        &__about-item {
+            width: 230px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .burger {
+        display: flex;
+    }
+    .promo {
+        &__menu {
+            display: none;
+        }
+        &__contact {
+            padding-right: 30px;
+        }
+        &__companytitle {
+            margin-top: 30px;
+            font-size: 20px;
+        }
+        &__title {
+            font-size: 34px;
+            margin-top: 10px;
+        }
+        &__subtitle {
+            font-size: 28px;
+        }
+        &__line:before, &__line:after {
+            width: 35vw;
+        }
+        &__about {
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .promo {
+        &__companytitle {
+            font-size: 18px;
+        }
+        &__subtitle {
+            font-size: 20px;
+        }
+        &__about-text {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .promo {
+        &__contact {
+            align-self: flex-end;
+        }
+        &__companytitle {
+            font-size: 16px;
+        }
+        &__title {
+            margin-top: 30px;
+            font-size: 28px;
+        }
+        &__subtitle {
+            margin-top: 30px;
+            font-size: 18px;
+        }
+        &__about {
+            padding: 0 10px;
+            &-item {
+                width: 180px;
+            }
+            &-text {
+                font-size: 12px;
+            }
+        }
+    }
+}
