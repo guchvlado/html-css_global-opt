@@ -40,12 +40,17 @@
         font-size: 13px;
         font-weight: 300;
         color: rgba(16, 16, 16, 0.7);
+        transition: border-color .5s ease;
+        &:focus {
+            border-color: $second-color;
+        }
     }
     textarea {
         box-sizing: border-box;
         margin-top: 8px;
         max-width: 100%;
         min-height: 71px;
+        max-height: 200px;
         padding-top: 18px;
         resize: vertical;
         border-radius: 10px;
