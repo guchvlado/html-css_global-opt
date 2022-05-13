@@ -61,6 +61,26 @@
             align-items: center;
         }
     }
+    .slider {
+        .swiper {
+            &-slide {
+                &-next {
+                    opacity: 0.3;
+                    transform: scale(0.8);
+                }
+                &-active {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+            &-button-prev {
+                left: 35%;
+            }
+            &-button-next {
+                right: 35%;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -157,6 +177,16 @@
             padding: 60px 5px;
             &-input {
                 width: calc(100% - 56px);
+            }
+        }
+    }
+    .slider {
+        .swiper {
+            &-button-prev {
+                left: 20%;
+            }
+            &-button-next {
+                right: 20%;
             }
         }
     }
