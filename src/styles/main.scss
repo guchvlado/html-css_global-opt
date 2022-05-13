@@ -15,4 +15,10 @@
 
 // БЭМ-блоки
 @import "../blocks/modules";
+
+.yandex-map {
+    height: 500px;
+    width: 100%;
+}
+
 @import "media";

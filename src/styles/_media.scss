@@ -112,6 +112,14 @@
             width: 100%;
         }
     }
+    .mainForm {
+        &__inputs {
+            flex-direction: column;
+        }
+        &__input {
+            max-width: 100%;
+        }
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -188,6 +196,11 @@
             &-button-next {
                 right: 20%;
             }
+        }
+    }
+    .mainForm {
+        .container {
+            padding: 0;
         }
     }
 }
